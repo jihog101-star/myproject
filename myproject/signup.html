@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 - 모두의 축구</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Malgun Gothic', sans-serif; }
+        body { background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .signup-box { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 450px; text-align: center; }
+        h2 { margin-bottom: 30px; color: #1e293b; }
+        .input-group { margin-bottom: 15px; text-align: left; }
+        label { display: block; margin-bottom: 6px; font-weight: bold; color: #475569; font-size: 14px; }
+        input { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 15px; }
+        .btn-signup { width: 100%; padding: 14px; background-color: #22c55e; color: white; border: none; border-radius: 6px; font-weight: bold; font-size: 16px; cursor: pointer; margin-top: 15px; }
+        .back-home { display: inline-block; margin-top: 20px; color: #94a3b8; text-decoration: none; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="signup-box">
+        <h2>👥 회원가입</h2>
+        <form action="login.html" method="GET">
+            <div class="input-group">
+                <label>이름</label>
+                <input type="text" required>
+            </div>
+            <div class="input-group">
+                <label>아이디</label>
+                <input type="text" required>
+            </div>
+            <div class="input-group">
+                <label>비밀번호</label>
+                <input type="password" required>
+            </div>
+            <div class="input-group">
+                <label>이메일</label>
+                <input type="email" required>
+            </div>
+            <button type="submit" class="btn-signup">가입하기</button>
+        </form>
+        <a href="index.html" class="back-home">취소하고 돌아가기</a>
+    </div>
+</body>
+</html>
